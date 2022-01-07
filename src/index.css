@@ -1,6 +1,27 @@
-input {
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.input {
   width: 23.5%;
 }
 .bg{
   box-shadow: 2px 2px 7px black inset;
+  
+}
+@media (min-width: 576px) and (max-width: 595px) {
+  .input{
+    width: 23.4%
+  }
+}
+@media (min-width: 300px) and (max-width: 575px) {
+  .input{
+    width: 23.4%
+  }
+  #main{
+    width: 55%;
+    margin-left: 23%;
+  }
 }

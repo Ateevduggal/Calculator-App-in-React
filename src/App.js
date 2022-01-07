@@ -19,13 +19,13 @@ const App = () => {
             <input
               type="button"
               value="Del"
-              className="btn btn-secondary text-dark fw-bold fs-5 px-3 ms-1 mt-2"
+              className="input btn btn-secondary text-dark fw-bold fs-5 px-3 ms-1 mt-2"
               onClick={(e) => setResult(result.slice(0, -1))}
             />
             <input
               type="button"
-              value="Clear"
-              className="btn btn-secondary text-dark fw-bold fs-5 px-3 ms-1 mt-2"
+              value="C"
+              className="input btn btn-secondary text-dark fw-bold fs-5 px-3 ms-1 mt-2"
               onClick={() => setResult("")}
             />
             {Data.map((Val) => {
@@ -44,7 +44,7 @@ const App = () => {
             <input
               type="button"
               value="="
-              className="btn btn-warning text-dark fs-5 px-3 ms-1 mt-2"
+              className="input btn btn-warning text-dark fs-5 px-3 ms-1 mt-2"
               onClick={() => setResult(eval(result).toString())}
             />
           </div>
